@@ -1,4 +1,5 @@
 import 'package:catelog/utils/routes.dart';
+import 'package:catelog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -25,7 +26,7 @@ class HomePage extends StatelessWidget {
           }, child: Text('Back'))
         ],
       ),
-      drawer: Drawer(
+      drawer: MyDrawer(
 
       ),
 
