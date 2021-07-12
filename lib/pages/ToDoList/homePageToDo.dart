@@ -1,13 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePageToDo extends StatefulWidget {
-
   @override
   _HomePageToDoState createState() => _HomePageToDoState();
 }
 
-class _HomePageTo12DoState extends State<HomePageToDo> {
+class _HomePageToDoState extends State<HomePageToDo> {
   Widget _buildTask(int index){
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -15,7 +13,7 @@ class _HomePageTo12DoState extends State<HomePageToDo> {
         children: [
           ListTile(
             title: Text("Task Title"),
-            subtitle: Text("Oct, 2 2029 . High"),
+            subtitle: Text("October, 2 2021 . High"),
             trailing: Checkbox(
               onChanged: (value){
                 print(value);
@@ -27,7 +25,6 @@ class _HomePageTo12DoState extends State<HomePageToDo> {
           Divider(),
         ],
       ),
-
     );
   }
   @override
