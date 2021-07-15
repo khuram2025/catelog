@@ -1,3 +1,4 @@
+import 'package:catelog/pages/FlutterProjects/homePage.dart';
 import 'package:catelog/pages/ToDoList/homePageToDo.dart';
 import 'package:catelog/pages/cookbook/basic_screen.dart';
 import 'package:catelog/pages/cookbook/immutable_widget.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red
       ),
-      home: MyApp(),
+      home: HomePage02(),
       // routes: {
       //   '/': (context) => HomePage(),
       //   MyRoutes.homePage: (context) => HomePage(),
