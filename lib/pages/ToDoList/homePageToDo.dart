@@ -1,3 +1,4 @@
+import 'package:catelog/pages/ToDoList/add_taskToDo.dart';
 import 'package:flutter/material.dart';
 
 class HomePageToDo extends StatefulWidget {
@@ -33,7 +34,9 @@ class _HomePageToDoState extends State<HomePageToDo> {
       floatingActionButton: FloatingActionButton(backgroundColor: Theme.of(context).primaryColor,
         child: Icon(
             Icons.add
-        ),),
+        ),
+        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => AddTaskScreen(),)),
+      ),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: 80),
         itemCount: 10,
